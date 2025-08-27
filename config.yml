@@ -1,0 +1,90 @@
+baseURL: "https://hosenssh.github.io" 
+title: Shen Hong
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Work Experience
+          url: experience/
+          weight: 1
+        - name: Personal Projects
+          url: projects/
+          weight: 2
+        - name: Artworks
+          url: artworks/
+          weight: 3 
+
+params:
+    description: "This website hosts blogs, experience, projects, and contact information."
+    author: Shen Hong
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: false
+    ShowAllPagesInArchive: false
+    MainSections: ["experience","projects","artworks"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Shen Hong
+          imageUrl: "picture.jpeg"
+          imageWidth: 160
+          imageHeight: 160
+          subtitle: "With 10 years as a Senior Software Engineer, I specialize in building distributed systems that scale, designing API-first backend services, and creating high-throughput data processing pipelines for both streaming and batch workloads. I've led teams through complex technical challenges, whether it's rebuilding critical foundational infrastructure or bringing entirely new platforms from the ground up. Outside work, art and filmmaking are my primary forms of creative expression."
+          buttons:
+            - name: Work Experience
+              url: experience/
+            - name: Personal Projects
+              url: projects/
+            - name: Artworks
+              url: artworks/
+
+    socialIcons:
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/shen-h-0b1739a2/
+        - name: Email
+          url: mailto:hosenstudio@outlook.com
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Home"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
